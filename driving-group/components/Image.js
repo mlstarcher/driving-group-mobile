@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, TouchableOpacity, View } from 'react-native';
-import logo from './assets/logo.png';
+import logo from '../assets/logo.png';
 import * as ImagePicker from 'expo-image-picker';
 
-export default function LandingPage() {
+export default function LogIn() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   let openImagePickerAsync = async () => {
@@ -45,12 +45,12 @@ export default function LandingPage() {
         <Image source={logo} style={styles.logo} />
       </View>
       <StatusBar style="auto" />
-      <TouchableOpacity
+      {/* <TouchableOpacity
         onPress={openImagePickerAsync}
         style={styles.button}>
         <Text style={styles.buttonText}
         >Add Photo</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 }
