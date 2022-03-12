@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "driving-group",
-    "slug": "driving-group",
+    "name": "Drivers Group",
+    "slug": "drivers-group",
     "version": "1.0.0",
+    "privacy": "public",
+    "description": "Track vehicle maintenance reports",
+    "owner": "driversgroup",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -27,6 +30,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "apiKey": "process.env.API_KEY",
+      "authDomain": "process.env.AUTH_DOMAIN",
+      "projectId": "process.env.PROJECT_ID",
+      "storageBucket": "process.env.STORAGE_BUCKET",
+      "messagingSenderId": "process.env.MESSAGING_SENDER_ID",
+      "appId": "process.env.APP_ID"
     }
   }
 }
